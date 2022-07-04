@@ -24,6 +24,12 @@ connection.once("open", ()=>{
     console.log("Mongodb Connection success!");
 });
 
+const ItemRouter = require("./routes/itemRoutes.js");
+
+http://localhost:8070/item
+
+app.use("/item" , ItemRouter);
+
 app.listen(PORT, ()=>{
     console.log(`Server is running on PORT: ${PORT}`);
 })
