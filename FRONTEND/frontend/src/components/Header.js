@@ -50,17 +50,35 @@ export const Header = () => {
         {/* logo */}
         <div className='navbar_logo'>
             <h2>MEARN Shopping Cart</h2>
-
         </div>
         {/* links */}
-        <div className='navbar_link'>
+        <ul className='navbar_link'>
             <li>
-                <Link to="/cart">
-                   
+                <Link to="/cart" className='cart__link'>
+                   {/* icon */}
+                   <i className='fas fa-shopping-cart'></i>
+                   <span>
+                   Cart
+                   <span className='cartlogo_badge'>
+                      0
+                   </span>
+                   </span>
                 </Link>
             </li>
-        </div>
+            <li>
+                <Link to="/">
+                  Shop
+                </Link>
+            </li>
+        </ul>
+       
         {/* hamburger menu */}
+        <div className='hamburger_menu'>
+        <div></div>
+        <div></div>
+        <div></div>
+        </div>
+        
 
     </nav>
   )

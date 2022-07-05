@@ -1,26 +1,25 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+//Screen
+import HomeScreen from './components/Screens/HomeScreen';
+import CartScreen from './components/Screens/CartScreen';
+import ItemScreen from './components/Screens/ItemScreen';
+
+//compnents
 import Header from './components/Header';
-import Footer from './components/Footer';
-import './App.css';
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 
 function App() {
   return (
-  <Router>
-    
-       {/* <Header/>
-       <Footer/> */}
-       {/* NavBar */}
-       {/* SideDrawer */}
-       <main>
-         <Switch>
-           <Route exact path="/" component={HomeScreen} />
-           <Route exact path="/item/:id" component={ItemScreen} />
-           <Route exact path="/cart" component={CartScreen} />
-         </Switch>
-       </main>
+    <BrowserRouter>
+      <Header/>
 
-    </Router>
+      <Routes>
+        <Route path="/home" element={<HomeScreen />} />
+        <Route path="/item" element={<ItemScreen />} />
+        <Route path="/cart" element={<CartScreen />} />
+      </Routes>
+    </BrowserRouter>
+
   );
 }
 
