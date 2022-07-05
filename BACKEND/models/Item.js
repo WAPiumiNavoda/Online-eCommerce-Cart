@@ -17,9 +17,17 @@ const ItemSchema = new Schema({
         type: String,
         required: true
      },
+     countInStock:{
+      type: Number,
+      required: true   
+    },
+     imageUrl:{
+        type:String,
+        require :true
+     },
      size:{
-         type: String,
-         required: true
+      type:String,
+      require :true
      }
 })
 
