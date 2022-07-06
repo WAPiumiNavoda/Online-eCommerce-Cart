@@ -49,7 +49,7 @@ export const Header = (click) => {
     <nav className="navbar">
         {/* logo */}
         <div className='navbar_logo'>
-            <h2>MEARN Shopping Cart</h2>
+            <h2 style={{ fontFamily : "Lucida Console, Courier New, monospace", fontSize:"40px"}}>MEARN Shopping Cart</h2>
         </div>
         {/* links */}
         <ul className='navbar_link'>
@@ -60,17 +60,17 @@ export const Header = (click) => {
             </li>
            
             <li>
-                <Link to="/">
+                <Link to="/about">
                   About
                 </Link>
             </li>
             <li>
-                <Link to="/">
+                <Link to="/contact">
                   Contact
                 </Link>
             </li>
             <li>
-                <Link to="/">
+                <Link to="/pdf">
                    PDF
                 </Link>
             </li>
@@ -94,7 +94,7 @@ export const Header = (click) => {
         {/* hamburger menu */}
         <div  className='login_user'>
         <li>
-                <Link to="/items" >
+                <Link to="/home" >
                    {/* icon */}
                    <i className='fas fa-user'></i>
                 </Link>

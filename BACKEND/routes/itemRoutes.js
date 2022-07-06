@@ -8,12 +8,16 @@ router.route("/add").post((req,res)=>{
     const itemName = req.body.itemName;
     const price = req.body.price;
     const description = req.body.description;
+    const countInStock = req.body.countInStock;
+    const imageUrl = req.body.imageUrl;
     const size = req.body.size;
 
     const newItem = new Item({
         itemName,
         price,
         description,
+        countInStock,
+        imageUrl,
         size
     })
 

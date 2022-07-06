@@ -9,6 +9,7 @@ import ItemScreen from './components/Screens/ItemScreen';
 import Header from './components/Header';
 import Footer from "./components/Footer";
 import AddItem from "./Item/AddItem";
+import WelcomeScreen from "./components/Screens/WelcomeScreen";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Header/>
 
       <Routes>
+        <Route path="/" element={<WelcomeScreen />} />
         <Route path="/home" element={<HomeScreen />} />
         <Route path="/item" element={<ItemScreen />} />
         <Route path="/cart" element={<CartScreen />} />
@@ -28,5 +30,6 @@ function App() {
 
   );
 }
+
 
 export default App;

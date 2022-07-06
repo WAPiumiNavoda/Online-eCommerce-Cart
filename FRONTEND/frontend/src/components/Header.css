@@ -1,7 +1,7 @@
 .navbar{
     width: 100%;
     height: 110px;
-    background-color:rgba(0, 0, 0, 0.722);
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,7 +22,7 @@
 }
 
 .navbar_link > li{
-    padding-left: 1.5rem;
+    padding-left: 5rem;
 }
 
 .navbar_link > li>a{
@@ -40,13 +40,13 @@
     margin-left: 8px;
 }
 .cart__link{
-    background-color: rgb(15, 14, 13);
+    background-color: rgb(37, 183, 147);
     padding: 10px;
     border-radius: 8px;
 }
 
 .cart__link:hover{
-    background-color: blueviolet;
+    background-color: rgb(173, 237, 228);
 
 }
 

@@ -6,8 +6,10 @@ import './Products.css';
 
 export const Products = () => {
   return (
-    
-    <div className='product_main'>
+
+<div className='product_main'>
+  
+<div className='product_main11'>
     <img src='https://rukminim1.flixcart.com/image/714/857/shirt/c/h/m/rt-22-royal-touch-m-original-imaekcxvjuksvxtz.jpeg?q=50'
       alt=''/>
     <div className='product_info'>
@@ -21,7 +23,8 @@ export const Products = () => {
       <Link to={`/product/${1111}`} className='info_button'>View</Link>
 
     </div>
-</div>    
+</div> 
+</div>   
 
   )
 }
