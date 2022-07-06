@@ -7,6 +7,8 @@ import ItemScreen from './components/Screens/ItemScreen';
 
 //compnents
 import Header from './components/Header';
+import Footer from "./components/Footer";
+import AddItem from "./Item/AddItem";
 
 function App() {
   return (
@@ -17,8 +19,12 @@ function App() {
         <Route path="/home" element={<HomeScreen />} />
         <Route path="/item" element={<ItemScreen />} />
         <Route path="/cart" element={<CartScreen />} />
+        <Route path="/items" element={<AddItem/>} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
+
+   
 
   );
 }

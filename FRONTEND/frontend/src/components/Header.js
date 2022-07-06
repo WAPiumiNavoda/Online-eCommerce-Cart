@@ -44,7 +44,7 @@ import React from 'react'
 import './Header.css';
 import {Link} from 'react-router-dom';
 
-export const Header = () => {
+export const Header = (click) => {
   return (
     <nav className="navbar">
         {/* logo */}
@@ -53,6 +53,28 @@ export const Header = () => {
         </div>
         {/* links */}
         <ul className='navbar_link'>
+        <li>
+                <Link to="/">
+                  Home
+                </Link>
+            </li>
+           
+            <li>
+                <Link to="/">
+                  About
+                </Link>
+            </li>
+            <li>
+                <Link to="/">
+                  Contact
+                </Link>
+            </li>
+            <li>
+                <Link to="/">
+                   PDF
+                </Link>
+            </li>
+            
             <li>
                 <Link to="/cart" className='cart__link'>
                    {/* icon */}
@@ -65,18 +87,18 @@ export const Header = () => {
                    </span>
                 </Link>
             </li>
-            <li>
-                <Link to="/">
-                  Shop
-                </Link>
-            </li>
+
+           
         </ul>
        
         {/* hamburger menu */}
-        <div className='hamburger_menu'>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div  className='login_user'>
+        <li>
+                <Link to="/items" >
+                   {/* icon */}
+                   <i className='fas fa-user'></i>
+                </Link>
+            </li>
         </div>
         
 
