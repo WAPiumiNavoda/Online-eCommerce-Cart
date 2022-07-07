@@ -1,6 +1,6 @@
 import React from 'react'
 import './HomeScreen.css';
-import Products from '../../Item/Products.js'
+import Products from './Products.js'
 
 const HomeScreen = () => {
   return (
