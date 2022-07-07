@@ -1,0 +1,22 @@
+.imge_div1{
+    height: 600px;
+    width: 100%;
+}
+
+.product__main{
+    display: flex;
+    padding: 10px;
+    /* background-color: antiquewhite; */
+}
+
+.product_1 > img{
+    height: 300px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.product_info >p{
+    margin-bottom: 8px;
+    text-align: center;
+}
