@@ -8,7 +8,7 @@ import ItemScreen from './components/Screens/ItemScreen';
 //compnents
 import Header from './components/MainPages/Header';
 import Footer from "./components/MainPages/Footer";
-import AddItem from "./components/Item/AddItem";
+import AddItem from "./components/redux/AddItem";
 import WelcomeScreen from "./components/MainPages/WelcomeScreen";
 import Login from "./components/MainPages/Login";
 import ProductScreen from "./components/Screens/ProductScreen";

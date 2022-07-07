@@ -1,9 +1,8 @@
 import React from 'react'
-import './ItemScreen.css';
 
-function ItemScreen() {
+const ItemScreen = () => {
   return (
-    <div className='itemscreen'>ItemScreen</div>
+    <div>ItemScreen</div>
   )
 }
 

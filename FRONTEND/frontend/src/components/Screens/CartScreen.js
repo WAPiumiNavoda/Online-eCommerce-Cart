@@ -9,6 +9,9 @@ function CartScreen() {
        <div className='cartscreen_left'>
           <h2>SHOPPING CART</h2>
           <CartItem/>
+          <CartItem/>
+          <CartItem/>
+          <CartItem/>
        </div>
 
        <div className='cartscreen_right'>
